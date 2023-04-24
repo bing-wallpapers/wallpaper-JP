@@ -2,19 +2,22 @@ name: Bing_Wallpaper_Download
 
 on:
   schedule:
-    - cron: "1 1 * * *"
+    - cron: "1 15 * * *"
   workflow_dispatch:
 
 jobs:
   play:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
         with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
-      - name: Npm install
+          node-version: 16
+      - name: Install dependencies
         run: npm install
       - name: Run Project
         run: npm run start
