@@ -1,6 +1,7 @@
 name: Bing_Wallpaper_Download
 
 on:
+  # Runs the workflow every day at 15:01 UTC (0:01 JST)
   schedule:
     - cron: "1 15 * * *"
   workflow_dispatch:
