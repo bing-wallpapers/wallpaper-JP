@@ -37,7 +37,6 @@
     
     ```
     git clone https://github.com/your_username/wallpaper-JP.git
-    
     ```
     
 2. 依存関係をインストールします。
@@ -45,14 +44,12 @@
     ```
     cd wallpaper-JP
     yarn install
-    
     ```
     
 3. スクレイピングプログラムを実行します。
     
     ```
     yarn start
-    
     ```
     
 4. 実行後、ダウンロードした壁紙は **`static`** ディレクトリに保存されます。
