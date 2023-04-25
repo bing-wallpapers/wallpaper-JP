@@ -5,7 +5,6 @@
 ## **ディレクトリ構造**
 
 ```
-csharpCopy code
 .
 ├── .github
 │   └── workflows
@@ -19,7 +18,6 @@ csharpCopy code
 ├── package.json
 ├── tsconfig.json
 └── yarn.lock
-
 ```
 
 ## **ファイル説明**
@@ -38,7 +36,6 @@ csharpCopy code
 1. このリポジトリをクローンします。
     
     ```
-    bashCopy code
     git clone https://github.com/your_username/wallpaper-JP.git
     
     ```
@@ -46,7 +43,6 @@ csharpCopy code
 2. 依存関係をインストールします。
     
     ```
-    bashCopy code
     cd wallpaper-JP
     yarn install
     
@@ -55,7 +51,6 @@ csharpCopy code
 3. スクレイピングプログラムを実行します。
     
     ```
-    sqlCopy code
     yarn start
     
     ```
